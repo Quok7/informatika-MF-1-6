@@ -1,0 +1,7 @@
+import math
+
+x = 2
+y = 3
+
+result = math.pow(x, y**2 + 4) - math.exp(-(3 * x))
+print(result)
