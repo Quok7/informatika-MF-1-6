@@ -1,0 +1,10 @@
+from math import exp, sqrt
+
+a = 0
+b = 1
+
+u = a + 4*b
+v = 2*a
+
+result = (u*exp(-v) + sqrt(u**4 + 3*v**2)) / (1 + abs(4*u + v))
+print(result)
