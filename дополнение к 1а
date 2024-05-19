@@ -1,0 +1,25 @@
+№2
+
+import math
+
+x = 3
+result = 2 * (math.sin(x / 2))**2 - (math.sin(x**2))**3
+print(result)
+
+№3
+
+import math
+
+x = 2
+y = 1
+
+result = (math.log(math.pow(x, 3)) + 4*x*y) / (5*x*y)
+print(result)
+№4
+
+import math
+
+x = 0.5
+result = (math.acos(x) - 7 * math.log(x**2)) / (x + 7.3)
+
+print(result)
