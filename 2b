@@ -1,0 +1,35 @@
+import cmath
+# при D>0 уравнение будет иметь два корня
+# при D=0 уравнение будет иметь только один корень
+# при D<0 уравнение не будет иметь действительных корней
+print("для одного корня (t-4)=0 -> t=4")
+t=4
+x=-(t-3)/(t-1)
+print(f"x: {x}")
+    
+print("для двух корней:")
+t=2
+a = t - 4
+b = t - 1
+c = t + 3
+discriminant= b**2 - 4*a*c
+if discriminant >= 0:
+    root1 = (-b + discriminant**0.5) / (2*a)
+    root2 = (-b - discriminant**0.5) / (2*a)
+    print(f"t={t}, x1={root1}, x2={root2}")
+else:
+    print("нет корней")
+
+
+print("нет корней:\n")
+t=-3.721
+a = t - 4
+b = t - 1
+c = t + 3
+discriminant= b**2 - 4*a*c
+if discriminant >= 0:
+    root1 = (-b + discriminant**0.5) / (2*a)
+    root2 = (-b - discriminant**0.5) / (2*a)
+    print(f"t={t}, x1={root1}, x2={root2}")
+else:
+    print("нет корней")
