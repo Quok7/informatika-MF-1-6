@@ -1,0 +1,15 @@
+def calculate_sum_and_transform_array(arr):
+    positive_sum = 0
+    negative_count = 0
+
+    for i in range(len(arr)):
+        if arr[i] > 0:
+            positive_sum += arr[i]
+        elif arr[i] < 0:
+            arr[i] *= 2
+            negative_count += 1
+
+    print("Исходный массив A:", arr)
+    print("Преобразованный массив A:", arr)
+    print("Сумма положительных элементов:", positive_sum)
+    print("Количество отрицательных элементов:", negative_count)
